@@ -1,0 +1,22 @@
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((data) => data.json())
+  .then((users) => {
+    const tableBody = document.getElementById("table_body");
+    tableBody.innerHTML = users
+      .map(
+        (user) => `
+          <tr>
+            <td>${user.id}</td>
+            <td>${user.name}</td>
+            <td>${user.username}</td>
+            <td>${user.email}</td>
+            <td>${user.phone}</td>
+            <td>${user.website}</td>
+            <td>${user.company.name}</td>
+            <td>${user.company.catchPhrase}</td>
+            <td>${user.company.bs}</td>
+          </tr>
+        `
+      )
+      .join("");
+  });
