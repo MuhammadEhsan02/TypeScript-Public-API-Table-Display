@@ -1,0 +1,26 @@
+* {
+    margin: 1%;
+}
+
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.table th,
+.table td {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1%;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table_heading {
+    background-color: lightblue;
+}
